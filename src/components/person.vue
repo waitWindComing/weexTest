@@ -31,7 +31,7 @@ export default {
             jumpPage() { 
                 console.log('push+2')
                 navigator.push({
-                    url: 'http://10.0.24.133:8081/dist/components/person.js',
+                    url: 'http://192.168.0.100:8081/dist/components/person.js',
                     animated: "true"
                 });
             }, 

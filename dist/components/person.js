@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -92,7 +92,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/czb0001/weexTest/src/components/person.vue"
+__vue_options__.__file = "/Users/neo/weexTest/src/components/person.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-c4be9a36"
@@ -134,14 +134,10 @@ module.exports = {
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
@@ -155,43 +151,36 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 
-var navigator = weex.requireModule('navigator');
-// const nativeModule = weex.requireModule("CRMNativeTool")
-var modal = weex.requireModule('modal');
+const navigator = weex.requireModule('navigator');
+const modal = weex.requireModule('modal');
 
-// nativeModule.run('456') 
-// nativeModule.getAndCallBack(rsp => { 
-//   modal.toast({ message: rsp, duration: 0.2 })
-// })
-
-exports.default = {
+/* harmony default export */ __webpack_exports__["default"] = ({
   name: 'App',
   components: {
     // HelloWorld
 
   },
-  data: function data() {
+  data() {
     return {
       content: "我是变量--",
       logo: "xcassets:test"
     };
   },
 
-
   methods: {
-    jumpPage: function jumpPage() {
+    jumpPage() {
       console.log('push+2');
       navigator.push({
-        url: 'http://10.0.24.133:8081/dist/components/person.js',
+        url: 'http://192.168.0.100:8081/dist/components/person.js',
         animated: "true"
       });
     },
-    onMapLoaded: function onMapLoaded(e) {
+    onMapLoaded(e) {
       // modal.toast({ message: JSON.stringify(e), duration: 0.2 });
       // this.$refs.crmM.focus()  
     }
   }
-};
+});
 
 /***/ }),
 /* 3 */
@@ -227,20 +216,20 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 module.exports.render._withStripped = true
 
 /***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_components_person_vue__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_components_person_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__src_components_person_vue__);
 
-
-var _person = __webpack_require__(0);
-
-var _person2 = _interopRequireDefault(_person);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_person2.default.el = '#root';
-new Vue(_person2.default);
+__WEBPACK_IMPORTED_MODULE_0__src_components_person_vue___default.a.el = '#root';
+new Vue(__WEBPACK_IMPORTED_MODULE_0__src_components_person_vue___default.a);
 
 /***/ })
 /******/ ]);
